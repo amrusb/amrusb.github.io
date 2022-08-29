@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #010326 !important;
+    transition: 0.2s;
+    font-size: 14pt !important;
+}
+body{
+    background-color: #F2F2F2 !important;
+}
+.header{
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+.navbar{
+    background-color: #F2F2F2!important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 10px  #01032642;
+}
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 24pt !important;
+}
+.my-btn{
+    border: none !important;
+    background-color: none;
+}
+.my-btn:active{
+    background-color: none !important;
+}
+.my-btn:active i, .my-btn:hover i{
+    color:#94C6F2 !important;
+}
+.navbar-nav li a{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.navbar-nav li:hover a{
+    background-color: #94C6F2 !important;
+    color:#F2EEAC !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+}
+.navbar-nav a{
+    font-size: 12pt !important;
+}
+.navbar-brand:hover{
+    color:#94C6F2 !important;
+}
+.context{
+    background-color: white;
+    box-shadow: 0px 0px 10px #0103260a;
+    border-bottom: 4px solid #01032642;
+    margin-bottom: 10px;
+}
+h1{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 400 !important;
+    font-size: 25pt !important;
+    font-style: italic;
+    text-align: left;
+    color:rgb(12, 15, 15) !important;
+    padding: 5px;
+    padding-left: 20px;
+    border-left: 10px solid #94C6F2;
+}
+.quote{
+    padding: 10%;
+    font-size: 14pt !important;
+}
+.quote-body{
+    text-indent: 16pt;
+    font-weight: 400;
+}
+.quote-author{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 200 !important;
+    font-style: italic;
+    text-align: right;
+}
+.quote-sign{
+    font-size: 25pt !important;
+    color: #94C6F2 !important;
+}
+.profile-pic{
+    width: 90%;
+    box-shadow: 0px 0px 10px #01032642;
+}
+#about-me .row{
+    margin: 40px 0px;
+}
+#about-me .row:first-child{
+    margin-top: 0px;
+}
