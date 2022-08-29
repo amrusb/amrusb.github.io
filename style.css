@@ -24,7 +24,7 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 1;
+    z-index: 2;
 }
 .navbar{
     background-color: #f2f2f2f1!important;
@@ -61,13 +61,12 @@ body{
 .navbar-brand:hover{
     color:#94C6F2 !important;
 }
-.context{
-    /* background-color: white;
-    box-shadow: 0px 0px 10px #0103260a; */
-    border-bottom: 2px solid #01032642;
-    margin-bottom: 10px;
+.content{
+    text-indent: 20pt;
+    line-height: 2;
 }
-.fa-angles-right{
+
+.fa-angles-right, .fa-angles-left{
     display: inline;
     font-size: 60pt!important;
     color:#94C6F2!important;
@@ -75,15 +74,17 @@ body{
 }
 .welcome{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
+    font-weight: 400 !important;
     font-size: 60pt !important;
+    text-align: justify;
 }
 .small-welcome{
     font-family: 'Playfair Display', serif !important;
-    font-weight: 200;
+    font-weight: lighter;
     font-size: 20pt !important;
-    /* font-style: italic; */
-    color: #cd8200 !important; 
+    font-style: italic;
+    text-align: right;
+    color: #f1c40f !important; 
 }
 h1{
     font-family: 'Playfair Display', serif !important;
@@ -122,13 +123,37 @@ h1{
     width: 90%;
     box-shadow: 0px 0px 10px #01032642;
 }
-#about-me .row{
-    margin: 40px 0px;
+
+.contact-btn{
+    width: 100%;
+    padding: 9px;
+    border: 2px solid #010326;
+    border-radius: 50px;
 }
-#about-me .row:first-child{
-    margin-top: 0px;
+.contact-btn i{
+    margin-right: 10px;
+}
+.contact-btn:hover, .contact-btn:hover i{
+    color: white!important;
+    border-color: white;
+    background-color: #94C6F2;
 }
 
+.social-media a{
+    font-size: 20pt !important;
+    margin: 0px 10px;
+}
+.social-media a:link, .social-media a:visited{
+    text-decoration: none;
+}
+.social-media a:active, .social-media a:hover{
+    color:#94C6F2 !important;
+    text-decoration: none;
+}
+
+.credits, .credits-name, .credits i{
+    font-size: 10pt !important;
+}
 .credits-name{
     font-family: 'Playfair Display', serif;
     font-weight: 800;
@@ -138,17 +163,12 @@ h1{
     padding: 10px 0px;
     box-shadow: 0 0 10px #01032642;
 }
-.footer a{
-    font-size: 16pt!important;
-}
-.footer a:link, .footer a:visited{
-    text-decoration: none;
-}
-.footer a:active, .footer a:hover{
-    color:#94C6F2 !important;
-    text-decoration: none;
-}
 
+.divider i{
+    color:#f1c40f !important;
+    font-size: 60pt !important;
+    margin: 20px 0px;
+}
 /* TIMELINE */
 .timeline_area {
     position: relative;
