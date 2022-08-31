@@ -46,6 +46,14 @@ body{
 .my-btn:active i, .my-btn:hover i{
     color:#94C6F2 !important;
 }
+
+.section{
+    margin: 80px 0px;
+}
+.section:last-child{
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
 .navbar-nav li a{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -73,9 +81,10 @@ body{
     margin-right: 5px;
 }
 .welcome{
+    width: 100%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 400 !important;
-    font-size: 60pt !important;
+    font-size: 65pt !important;
     text-align: justify;
 }
 .small-welcome{
@@ -94,8 +103,19 @@ h1{
     text-align: left;
     color:rgb(12, 15, 15) !important;
     padding: 5px;
-    padding-left: 20px;
-    border-left: 10px solid #94C6F2;
+    /* padding-left: 20px; */
+    margin-bottom: 30px !important;
+    /* border-left: 10px solid #94C6F2; */
+}
+
+h1 i{
+    color: #94C6F2 !important;
+    font-size: 30pt!important;
+    margin-right: 20px;
+}
+
+h3 {
+    padding: 20px !important;
 }
 .quote{
     border-left: 10px solid white;
@@ -123,7 +143,19 @@ h1{
     width: 90%;
     box-shadow: 0px 0px 10px #01032642;
 }
-
+h4{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18pt !important;
+}
+h4 i{
+    color:#f1c40f !important;
+    font-size: 18pt !important;
+    margin-right: 10px;
+}
+h4 a:hover, h4 a:link, h4 a:active{
+    text-decoration: none!important;
+}
 .contact-btn{
     width: 100%;
     padding: 9px;
@@ -167,9 +199,12 @@ h1{
 .divider i{
     color:#f1c40f !important;
     font-size: 60pt !important;
-    margin: 20px 0px;
+    margin: 15px 0px;
 }
-/* TIMELINE */
+/* 
+TIMELINE 
+template from: https://www.bootdey.com/snippets/view/timeline-events-area
+*/
 .timeline_area {
     position: relative;
     z-index: 1;
