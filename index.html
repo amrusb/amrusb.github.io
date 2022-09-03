@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7fd1639acc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Bartosz Surma</title>
 </head>
 <body>
@@ -46,17 +47,19 @@
     </div> -->
     <div class="container section">
         <div class="row">
-            <div class="col-lg-6 welcome-div">
+            <div class="col-sm-6 welcome-div">
                 <i class="fa-solid fa-angles-right"></i>
                 <p class="welcome">Hello, world!</p>
                 <p class="welcome">I'm Bartosz!</p>
                 <p class="small-welcome">ambition fuels me</p>
                 <p class="small-welcome">dreams motivate me</p>
-                <p class="text-right"><i class="fa-solid fa-angles-left" style="transform: rotate(90deg);"></i></p>
+                <i class="fa-solid fa-angles-right fa-rotate-270 fa-pull-right"></i>
             </div>
-            <div class="col-lg-6 text-center">
+            <div class="col-sm-6 text-center">
                 <img class="img-circle profile-pic" src="Myself.jpg" alt="Bartosz Surma">
-                <div class="circle"></div>
+                <svg width="100%" height="100%" class="circle">
+                    <circle cx="50%" cy="50%" r="49%" fill="#f1c40f"></circle>
+                </svg>
             </div>     
         </div>
     </div>
@@ -101,7 +104,7 @@
                                 <div class="single-timeline-content">
                                     <div class="timeline-text">
                                         <h6 class="timeline-heading">Cardinal Stafan Wyszyński University in Warsaw</h6>
-                                        <p>IT student at Cardinal Stafan Wyszyński University in Warsaw</p>
+                                        <p>Field of study: IT</p>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +119,7 @@
                                 <div class="single-timeline-content">
                                     <div class="timeline-text">
                                         <h6 class="timeline-heading">Nicolaus Copernicus University in Thorn</h6>
-                                        <p>Theology student at Nicolaus Copernicus University in Thorn</p>
+                                        <p>Field of study:Theology</p>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +157,7 @@
                 <h1><i class="fa-solid fa-folder"></i>portfolio</h1>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <h4><i class="fa-solid fa-palette"></i>graphic-design</h4>
             <div class="row">
                 <div class="col-md-4">
@@ -175,7 +178,7 @@
                     <img src="portfolio\graphics\misje święte.jpg" class="img-thumbnail" alt="poster_5">                    
                 </div>
             </div>
-        </div>
+        </div> -->
             <!-- PROGRAMMING -->
         <div class="row">
             <h4><i class="fa-solid fa-code"></i>programming</h4>
@@ -193,17 +196,17 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 content">
+            <div class="col-md-4 content">
                 <a href="mailto:bartosz.surma@outlook.com">
                     <button class="contact-btn" ><i class="fa-solid fa-envelope"></i>e-mail me</button>
                 </a>
             </div>
-            <div class="col-lg-4 content">
+            <div class="col-md-4 content">
                 <a href=" http://m.me/bsurmaa" target="_blank">
                     <button class="contact-btn"><i class="fa-brands fa-facebook-messenger"></i>write me</button>
                 </a>
             </div>
-            <div class="col-lg-4 content">
+            <div class="col-md-4 content">
                 <a href=" http://t.me/amrusb" target="_blank">
                     <button class="contact-btn"><i class="fa-brands fa-telegram"></i>telegram me</button>
                 </a>

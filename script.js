@@ -1,14 +1,9 @@
-const ageSpan = document.querySelector('.age');
-
-const checkAge = () =>{
+const checkAge = () =>{  //setting my current age
     const date = new Date();
     const year = date.getFullYear();
     const month = date.getMonth();
     const day = date.getDate();
-    let age = 0;
-    console.log(year);
-    console.log(month);
-    console.log(day);
+    let age;
     if(month == 6 && day >=6){
         age = year - 1999;
             console.log(age);
@@ -17,7 +12,10 @@ const checkAge = () =>{
             age = year - 1999;
             console.log(age);
     }
-    ageSpan.textContent = age;
+    $(".age").text(age);
+    // ageSpan.textContent = age;
 }
 
-checkAge();
+$(document).ready(function(){
+    checkAge();
+});
