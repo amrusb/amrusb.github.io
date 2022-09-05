@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7fd1639acc.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Bartosz Surma</title>
 </head>
@@ -92,55 +93,78 @@
                 <h1><i class="fa-solid fa-graduation-cap"></i>education</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 content">
-                <div class="apland-timeline-area">
-                    <div class="single-timeline-area">
-                        <div class="timeline-date">
-                            <p>2021 - now</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="single-timeline-content">
-                                    <div class="timeline-text">
-                                        <h6 class="timeline-heading">Cardinal Stafan Wyszyński University in Warsaw</h6>
-                                        <p>Field of study: IT</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-timeline-area">
-                        <div class="timeline-date">
-                            <p>2018 - 2021</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="single-timeline-content">
-                                    <div class="timeline-text">
-                                        <h6 class="timeline-heading">Nicolaus Copernicus University in Thorn</h6>
-                                        <p>Field of study:Theology</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-timeline-area">
-                        <div class="timeline-date">
-                            <p>2016 - 2018</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="single-timeline-content">
-                                    <div class="timeline-text">
-                                        <h6 class="timeline-heading">John III Sobieski Secondary school in Grudziądz</h6>
-                                        <p>High school student</p>
-                                        <p>Matura exam's subjects: Polish, English, Mathematic (extended), Geography (extended)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="timeline">
+            <div class="timeline-event left">
+                <h5 class="timeline-date"><span class="fa-solid fa-calendar-days"></span>2021 - now</h5>
+                <div class="timeline-text">
+                    <h6 class="timeline-heading">Cardinal Stafan Wyszyński University</h6>
+                    <p class="city-name"><span class="fa-solid fa-location-dot"></span>Warsaw</p>
+                    <p>Field of study: Information Technology</p>
+                </div>
+            </div>
+            <div class="timeline-event right">
+                <h5 class="timeline-date"><span class="fa-solid fa-calendar-days"></span>2018 - 2021</h5>
+                <div class="timeline-text">
+                    <h6 class="timeline-heading">Nicolaus Copernicus University</h6>
+                    <p class="city-name"><span class="fa-solid fa-location-dot"></span>Thorn</p>
+                    <p>Field of study: Theology</p>
+                </div>
+            </div>        
+            <div class="timeline-event left">
+                <h5 class="timeline-date"><span class="fa-solid fa-calendar-days"></span>2016 - 2018</h5>
+                <div class="timeline-text">
+                    <h6 class="timeline-heading">Jan III Sobieski High School</h6>
+                    <p class="city-name"><span class="fa-solid fa-location-dot"></span>Grudziądz</p>
+                    <p>Matura exam's subjects: Polish, English, Mathematic <i>(extended)</i>, Geography <i>(extended)</i></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><i class="fa-regular fa-file-code"></i>Software Skills</h3>
+                    <ul>
+                        <li><iconify-icon icon="file-icons:c" class="c-plus-plus"></iconify-icon>C/C++</li>
+                        <li><iconify-icon icon="raphael:js" class="java-script"></iconify-icon>Java Script</li>
+                        <li><iconify-icon icon="simple-icons:python" class="python"></iconify-icon>Python</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h3><i class="fa-solid fa-laptop-code"></i>Web</h3>
+                    <ul>
+                        <li><iconify-icon icon="fa:html5" class="html"></iconify-icon>HTML</li>
+                        <li><iconify-icon icon="fa6-brands:css3-alt" class="css"></iconify-icon>CSS</li>
+                        <li><iconify-icon icon="raphael:js" class="java-script"></iconify-icon>Java Script</li>
+                        <li><iconify-icon icon="cib:bootstrap" class="bootstrap"></iconify-icon>Bootstrap 3</li>
+                        <li><iconify-icon icon="simple-icons:jquery" class="jquery"></iconify-icon>jQuery</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h3><i class="fa-solid fa-palette"></i>Graphics</h3>
+                    <ul>
+                        <li><iconify-icon icon="simple-icons:affinityphoto" class="affinityphoto"></iconify-icon>Affinity Photo</li>
+                        <li><iconify-icon icon="simple-icons:affinitydesigner" class="affinitydesigner"></iconify-icon>Affinity Designer</li>
+                        <li><iconify-icon icon="simple-icons:affinitypublisher" class="affinitypublisher"></iconify-icon>Affinity Publisher</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><i class="fa-solid fa-toolbox"></i>Programming tools</h3>
+                    <ul>
+                        <li><iconify-icon icon="simple-icons:gnubash" class="bash"></iconify-icon>Bash</li>
+                        <li><iconify-icon icon="bi:git" class="git"></iconify-icon>Git</li>
+                        <li><iconify-icon icon="cib:visual-studio" class="visual-studio"></iconify-icon>Visual Studio</li>
+                        <li><iconify-icon icon="cib:visual-studio-code" class="visual-studio-code"></iconify-icon>Visual Studio Code</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h3><i class="fa-solid fa-language"></i>Languages</h3>
+                    <ul>
+                        <li><iconify-icon icon="el:flag-alt"></iconify-icon>Polish <i style="text-transform: uppercase; font-size: 70%!important;">(native)</i></li>
+                        <li><iconify-icon icon="el:flag-alt"></iconify-icon>English <i style="text-transform: uppercase; font-size: 70%!important;">(b2)</i></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -157,31 +181,39 @@
                 <h1><i class="fa-solid fa-folder"></i>portfolio</h1>
             </div>
         </div>
-        <!-- <div class="row">
+        <div class="row">
             <h4><i class="fa-solid fa-palette"></i>graphic-design</h4>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="portfolio\graphics\akatyst.jpg" class="img-thumbnail" alt="poster_1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti maiores, corrupti molestias quam, aut veritatis accusamus eligendi quod laboriosam hic tempora, earum dolore et. Dolorem ducimus a architecto libero.</p>
+            <div class="gallery container">
+                <div class="box">
+                    <img src="/portfolio/graphics/akatyst.jpg" alt="poster_1">
                 </div>
-                <div class="col-md-4">
-                    <img src="portfolio\graphics\czuwanie.jpg" class="img-thumbnail" alt="poster_2">
+                <div class="box">
+                    <img src="/portfolio/graphics/katechezy.jpg" alt="poster_2">
                 </div>
-                <div class="col-md-4">
-                    <img src="portfolio\graphics\rekolekcjie_liturgiczne.jpg" class="img-thumbnail" alt="poster_3">
+                <div class="box">
+                    <img src="/portfolio/graphics/czuwanie.jpg" alt="poster_3">
                 </div>
+                <div class="box">
+                    <img src="/portfolio/graphics/rekolekcjie_liturgiczne.jpg" alt="poster_4">
+                </div>
+                <div class="box">
+                    <img src="/portfolio/graphics/pielgrzymka.jpg" alt="poster_5">
+                </div>
+                <div class="box">
+                    <img src="/portfolio/graphics/misje_święte.jpg" alt="poster_6">
+                </div>
+                <div class="box">
+                    <img src="/portfolio/graphics/rekolekcjie_liturgiczne_2023.jpg" alt="poster_7">
+                </div>
+
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="portfolio\graphics\pielgrzymka.jpg" class="img-thumbnail" alt="poster_4">                    
-                </div>
-                <div class="col-md-4">
-                    <img src="portfolio\graphics\misje święte.jpg" class="img-thumbnail" alt="poster_5">                    
-                </div>
-            </div>
-        </div> -->
+        </div>
             <!-- PROGRAMMING -->
         <div class="row">
             <h4><i class="fa-solid fa-code"></i>programming</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti maiores, corrupti molestias quam, aut veritatis accusamus eligendi quod laboriosam hic tempora, earum dolore et. Dolorem ducimus a architecto libero.</p>
+
         </div>
     </div>
     <div class="container divider text-center">
@@ -224,7 +256,7 @@
     </div>
     <div class="container-fluid footer text-center">
         <div class="col-lg-12"><a class="fa-solid fa-chevron-up" href="#"></a></div>
-        <div class="col-lg-12 credits">made with <i class="fa-solid fa-heart"></i> by <span class="credits-name">Bartosz Surma</span></div>
+        <div class="col-lg-12 credits">designed by <span class="credits-name">Bartosz Surma</span></div>
     </div>
     <script src="./script.js"></script>
 </body>
