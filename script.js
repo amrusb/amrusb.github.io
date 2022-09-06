@@ -17,27 +17,36 @@ const checkAge = () =>{  //setting my current age
 
 $(document).ready(function(){
     checkAge();
-    $('.box').click(function(){
-        this.classList.toggle('box-clicked')
+    $('.frame').find('a').hide();
+    $('.frame').click(function(){
+        $(this).toggleClass('frame-clicked')
+        $(this).children('a').fadeToggle();
          galleryImages.forEach(img => {
             if(img.alt !== this.children[0].alt){
-               $(img.parentElement).removeClass('box-clicked');
+               $(img.parentElement).removeClass('frame-clicked');
+               $(img).next().fadeOut();
             }
         });
     })
+
     $('*').click(function(e){
-        if(!e.target.parentElement.classList.contains('box')){
+        if(!e.target.parentElement.classList.contains('frame')){
         galleryImages.forEach(img =>{
-            $(img.parentElement).removeClass('box-clicked');
+            $(img).parent().removeClass('frame-clicked');
+            $(img).next().fadeOut();
         })
     }
     })
-    const sign = document.querySelector('.python');
 
-    $(sign.parentElement).mouseenter(function(){
-        $(sign).attr('icon', 'logos:python')
+    $('.text-box').hide();
+    $('.img-box').click(function(){
+        $(this).next().slideToggle("slow");
+    });
+
+    $('.python').parent().mouseenter(function(){
+        $('.python').attr('icon', 'logos:python');
     })
-    $(sign.parentElement).mouseleave(function(){
-        $(sign).attr('icon', 'simple-icons:python')
+    $('.python').parent().mouseleave(function(){
+        $('.python').attr('icon', 'simple-icons:python');
     })
 });
