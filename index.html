@@ -51,10 +51,10 @@
             <div class="col-sm-6 welcome-div">
                 <i class="fa-solid fa-angles-right"></i>
                 <p class="welcome">Hello, world!</p>
-                <p class="welcome">I'm Bartosz!</p>
+                <p class="welcome">I'm Bartosz!<i class="fa-solid fa-window-minimize fa-fade" style="--fa-animation-duration: 1.5s; --fa-fade-opacity: 0;"></i></p>
                 <p class="small-welcome">ambition fuels me</p>
                 <p class="small-welcome">dreams motivate me</p>
-                <i class="fa-solid fa-angles-right fa-rotate-270 fa-pull-right"></i>
+                <i class="fa-solid fa-angles-right fa-pull-right" style="transform:rotate(270deg)"></i>
             </div>
             <div class="col-sm-6 text-center">
                 <img class="img-circle profile-pic" src="Myself.jpg" alt="Bartosz Surma">
@@ -66,11 +66,7 @@
     </div>
     <!-- ABOUT-->
     <div id="about-me" class="container section">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1><i class="fa-solid fa-user-large"></i></i>who am I?</h1>
-            </div>
-        </div>
+        <h1><i class="fa-solid fa-user-large"></i></i>who am I?</h1>
         <div class="row  text-justify">
             <div class="col-lg-12 content">
                 <p>My name is <strong>Bartosz</strong> <i>(also called Bartek)</i> and I am <span class="age"></span> years old. My life started in <strong>Grudziądz</strong> - a city in notrhern Poland, but currently, due to my studies, I live in <strong>Warsaw</strong> - the capitol of Poland.</p>
@@ -87,11 +83,7 @@
     </div>
     <!-- EDUCATION -->
     <div id="education" class="container section">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1><i class="fa-solid fa-graduation-cap"></i>education</h1>
-            </div>
-        </div>
+        <h1><i class="fa-solid fa-graduation-cap"></i>what do I know?</h1>
         <div class="timeline">
             <div class="timeline-event left">
                 <h5 class="timeline-date"><span class="fa-solid fa-calendar-days"></span>2021 - now</h5>
@@ -175,67 +167,66 @@
     </div>
     <!-- PORTFOLIO -->
     <div id="portfolio" class="container text-center section">
+        <h1><i class="fa-solid fa-folder"></i>what do I make?</h1>
         <div class="row">
-            <div class="col-lg-12">
-                <h1><i class="fa-solid fa-folder"></i>what did I made?</h1>
-            </div>
-        </div>
-        <div class="row">
-            <h4><i class="fa-solid fa-palette"></i>posters</h4>
+            <h4><i class="fa-solid fa-palette"></i>I make posters</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti maiores, corrupti molestias quam, aut veritatis accusamus eligendi quod laboriosam hic tempora, earum dolore et. Dolorem ducimus a architecto libero.</p>
             <div class="gallery container">
                 <div class="frame">
                     <img src="/portfolio/graphics/akatyst.jpg" alt="poster_1">
-                    <a class="fa-solid fa-magnifying-glass"></a>        
+                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/akatyst.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
                     <img src="/portfolio/graphics/katechezy.jpg" alt="poster_2">
-                    <a class="fa-solid fa-magnifying-glass"></a>        
+                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/katechezy.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
                     <img src="/portfolio/graphics/czuwanie.jpg" alt="poster_3">
-                    <a class="fa-solid fa-magnifying-glass"></a>        
+                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/czuwanie.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
                     <img src="/portfolio/graphics/rekolekcjie_liturgiczne.jpg" alt="poster_4">
-                    <a class="fa-solid fa-magnifying-glass"></a>        
+                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/rekolekcjie_liturgiczne.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
                     <img src="/portfolio/graphics/pielgrzymka.jpg" alt="poster_5">
-                    <a class="fa-solid fa-magnifying-glass"></a>
+                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/pielgrzymka.jpg" target="_blank"></a>
                 </div>
                 <div class="frame">
                     <img src="/portfolio/graphics/misje_święte.jpg" alt="poster_6">
-                    <a class="fa-solid fa-magnifying-glass"></a>
+                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/misje_święte.jpg" target="_blank"></a>
                 </div>
                 <div class="frame">
                     <img src="/portfolio/graphics/rekolekcjie_liturgiczne_2023.jpg" alt="poster_7">
-                    <a class="fa-solid fa-magnifying-glass"></a>        
+                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/rekolekcjie_liturgiczne_2023.jpg" target="_blank"></a>        
                 </div>
             </div>
         </div>
             <!-- PROGRAMMING -->
         <div class="row">
-            <h4><i class="fa-solid fa-code"></i>programs</h4>
+            <h4><i class="fa-solid fa-code"></i>I write programs</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti maiores, corrupti molestias quam, aut veritatis accusamus eligendi quod laboriosam hic tempora, earum dolore et. Dolorem ducimus a architecto libero.</p>
             <div class="programs">
                 <div class="program-box">
                     <div class="img-box"><img src="/portfolio/programs/cpp-mastermind.jpg"></div>
                     <div class="text-box">
-                        <p>A simple logical console game, written in <strong>C++</strong>. The purpose of writing this console game was to show my skills of <strong>objective programming</strong> in C++ language. Thanks to this I could attempt to an end-of-term exam at my University.</p>
-                        <p class="link">www<i class="fa-solid fa-hand-pointer fa-beat"></i></p>
+                        <p>
+                            <strong>Mastermind</strong> is a simple logical console game, written in <strong>C++</strong>. The purpose of writing this console game was to show my skills of <strong>objective programming</strong> in C++ language. Thanks to this I could attempt to an end-of-term exam at my University.
+                        </p>
+                        <a class="link" href="https://github.com/amrusb/mastermind" target="_blank">www<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
                     </div>
                 </div>
                 <div class="program-box">
                     <div class="img-box"><img src="/portfolio/programs/js-calculator.jpg"></div>
                     <div class="text-box">
-                        <p>This is a simple JavaScript application that includes:</p>
-                        <ol class="fa-ul" style="--fa-li-margin: 1em;">
-                            <li><span class="fa-li"><i class="fa-solid fa-calculator"></i></span> a calculator</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-temperature-three-quarters"></i></span> a temperature converter</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-coins"></i></span> an currency converter</li>
-                        </ol>
-                        <a class="link text-center" href="https://github.com/amrusb/JS-Calculator" target="_blank">www<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
+                        <p>This is a simple JavaScript application that includes:
+                            <ol class="fa-ul" style="--fa-li-margin: 1em;">
+                                <li><span class="fa-li"><i class="fa-solid fa-calculator"></i></span> a calculator</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-temperature-three-quarters"></i></span> a temperature converter</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-coins"></i></span> an currency converter</li>
+                            </ol>
+                        </p>
+                        <a class="link" href="https://github.com/amrusb/JS-Calculator" target="_blank">www<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
                     </div>
                 </div>
 
@@ -248,11 +239,7 @@
         </div>
     </div>
     <div id="contact" class="container text-center section">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1><i class="fa-solid fa-comment"></i>how to reach me?</h1>
-            </div>
-        </div>
+        <h1><i class="fa-solid fa-comment"></i>how to reach me?</h1>
         <div class="row">
             <div class="col-md-4 content">
                 <a href="mailto:bartosz.surma@outlook.com">
@@ -272,7 +259,7 @@
         </div>
         <div class="row social-media">
             <h3>you can also find me on:</h3>
-            <div class="container">
+            <div class="">
                     <a class="fa-brands fa-github" href="https://github.com/amrusb" target="_blank"></a>
                     <a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/bartosz-surma-b44a29225/" target="_blank"></a>
                     <a class="fa-brands fa-instagram" href="https://www.instagram.com/b_amrus/" target="_blank"></a>

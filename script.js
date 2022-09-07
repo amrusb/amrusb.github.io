@@ -38,9 +38,9 @@ $(document).ready(function(){
     }
     })
 
-    $('.text-box').hide();
+    $('.text-box').slideToggle();
     $('.img-box').click(function(){
-        $(this).next().slideToggle("slow");
+        $(this).next().slideToggle(1500);
     });
 
     $('.python').parent().mouseenter(function(){
