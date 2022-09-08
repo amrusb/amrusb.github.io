@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.svg">
+    <link rel="stylesheet" href="/fullpage/fullpage.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -22,10 +24,10 @@
           <nav class="navbar navbar-default">
             <div class="container">
               <div class="navbar-header">
-                <button type="button" class="navbar-toggle my-btn" data-toggle="collapse" data-target="#myNavbar">
+                <button  class="navbar-toggle my-btn" data-toggle="collapse" data-target="#myNavbar">
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
-                <a class="navbar-brand" href="#">Bartosz Surma</a>
+                <a class="navbar-brand" href="#home">Bartosz Surma</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -38,15 +40,18 @@
             </div>
           </nav>
     </div>
-    <!-- <div class="jumbotron heading-photo">
-        <div class="container heading-text">
-            <div class="col-lg-12 quote">
-                <p class="quote-body">"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</p>
-                <p class="quote-author">— Linus Torvalds</p>                        
-            </div>
-        </div>  
+    <!-- <div class="header-photo">
+        <div class="heading-photo">
+            <div class="container heading-text">
+                <div class="col-lg-12">
+                    <p class="quote-body">"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</p>
+                    <p class="quote-author">— Linus Torvalds</p>                        
+                </div>
+            </div>  
+        </div>
     </div> -->
-    <div class="container section">
+    <!-- Home -->
+    <div id="home" class="container section">
         <div class="row">
             <div class="col-sm-6 welcome-div">
                 <i class="fa-solid fa-angles-right"></i>
@@ -57,9 +62,9 @@
                 <i class="fa-solid fa-angles-right fa-pull-right" style="transform:rotate(270deg)"></i>
             </div>
             <div class="col-sm-6 text-center">
-                <img class="img-circle profile-pic" src="Myself.jpg" alt="Bartosz Surma">
+                <img class="img-circle profile-pic" src="/img/myself.jpg" alt="Bartosz Surma">
                 <svg width="100%" height="100%" class="circle">
-                    <circle cx="50%" cy="50%" r="49%" fill="#f1c40f"></circle>
+                    <circle r="48%" fill="#f1c40f"></circle>
                 </svg>
             </div>     
         </div>
@@ -84,6 +89,7 @@
     <!-- EDUCATION -->
     <div id="education" class="container section">
         <h1><i class="fa-solid fa-graduation-cap"></i>what do I know?</h1>
+        <!-- TIMELINE -->
         <div class="timeline">
             <div class="timeline-event left">
                 <h5 class="timeline-date"><span class="fa-solid fa-calendar-days"></span>2021 - now</h5>
@@ -169,55 +175,55 @@
     <div id="portfolio" class="container text-center section">
         <h1><i class="fa-solid fa-folder"></i>what do I make?</h1>
         <div class="row">
-            <h4><i class="fa-solid fa-palette"></i>I make posters</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti maiores, corrupti molestias quam, aut veritatis accusamus eligendi quod laboriosam hic tempora, earum dolore et. Dolorem ducimus a architecto libero.</p>
+            <h4><i class="fa-solid fa-palette"></i>I design graphics<i class="fa-solid fa-palette"></i></h4>
+            <p class="description"><i>Graphic designing</i> become one of my hobbies. I am not a profesional graphic designer, but I enjoy doing it. My friends, for whom I make those graphics, say that they like my designs, so I am always eager to make posters. Here you can see some of my works.</p>
             <div class="gallery container">
                 <div class="frame">
-                    <img src="/portfolio/graphics/akatyst.jpg" alt="poster_1">
-                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/akatyst.jpg" target="_blank"></a>        
+                    <img src="/img/graphics/akatyst.jpg" alt="poster_1">
+                    <a class="fa-solid fa-magnifying-glass" href="/img/graphics/akatyst.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
-                    <img src="/portfolio/graphics/katechezy.jpg" alt="poster_2">
-                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/katechezy.jpg" target="_blank"></a>        
+                    <img src="/img/graphics/katechezy.jpg" alt="poster_2">
+                    <a class="fa-solid fa-magnifying-glass" href="/img/graphics/katechezy.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
-                    <img src="/portfolio/graphics/czuwanie.jpg" alt="poster_3">
-                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/czuwanie.jpg" target="_blank"></a>        
+                    <img src="/img/graphics/czuwanie.jpg" alt="poster_3">
+                    <a class="fa-solid fa-magnifying-glass" href="/img/graphics/czuwanie.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
-                    <img src="/portfolio/graphics/rekolekcjie_liturgiczne.jpg" alt="poster_4">
-                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/rekolekcjie_liturgiczne.jpg" target="_blank"></a>        
+                    <img src="/img/graphics/rekolekcjie_liturgiczne.jpg" alt="poster_4">
+                    <a class="fa-solid fa-magnifying-glass" href="/img/graphics/rekolekcjie_liturgiczne.jpg" target="_blank"></a>        
                 </div>
                 <div class="frame">
-                    <img src="/portfolio/graphics/pielgrzymka.jpg" alt="poster_5">
-                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/pielgrzymka.jpg" target="_blank"></a>
+                    <img src="/img/graphics/pielgrzymka.jpg" alt="poster_5">
+                    <a class="fa-solid fa-magnifying-glass" href="/img/graphics/pielgrzymka.jpg" target="_blank"></a>
                 </div>
                 <div class="frame">
-                    <img src="/portfolio/graphics/misje_święte.jpg" alt="poster_6">
-                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/misje_święte.jpg" target="_blank"></a>
+                    <img src="/img/graphics/misje_święte.jpg" alt="poster_6">
+                    <a class="fa-solid fa-magnifying-glass" href="/img/graphics/misje_święte.jpg" target="_blank"></a>
                 </div>
                 <div class="frame">
-                    <img src="/portfolio/graphics/rekolekcjie_liturgiczne_2023.jpg" alt="poster_7">
-                    <a class="fa-solid fa-magnifying-glass" href="/portfolio/graphics/rekolekcjie_liturgiczne_2023.jpg" target="_blank"></a>        
+                    <img src="/img/graphics/rekolekcjie_liturgiczne_2023.jpg" alt="poster_7">
+                    <a class="fa-solid fa-magnifying-glass" href="/img/graphics/rekolekcjie_liturgiczne_2023.jpg" target="_blank"></a>        
                 </div>
             </div>
         </div>
             <!-- PROGRAMMING -->
         <div class="row">
-            <h4><i class="fa-solid fa-code"></i>I write programs</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti maiores, corrupti molestias quam, aut veritatis accusamus eligendi quod laboriosam hic tempora, earum dolore et. Dolorem ducimus a architecto libero.</p>
+            <h4><i class="fa-solid fa-code"></i>I write programs<i class="fa-solid fa-code"></i></h4>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti maiores, corrupti molestias quam, aut veritatis accusamus eligendi quod laboriosam hic tempora, earum dolore et. Dolorem ducimus a architecto libero.</p>
             <div class="programs">
                 <div class="program-box">
-                    <div class="img-box"><img src="/portfolio/programs/cpp-mastermind.jpg"></div>
+                    <div class="img-box"><img src="/img/programs/cpp-mastermind.jpg"></div>
                     <div class="text-box">
                         <p>
                             <strong>Mastermind</strong> is a simple logical console game, written in <strong>C++</strong>. The purpose of writing this console game was to show my skills of <strong>objective programming</strong> in C++ language. Thanks to this I could attempt to an end-of-term exam at my University.
                         </p>
-                        <a class="link" href="https://github.com/amrusb/mastermind" target="_blank">www<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
+                        <a class="link" href="https://github.com/amrusb/mastermind" target="_blank">code<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
                     </div>
                 </div>
                 <div class="program-box">
-                    <div class="img-box"><img src="/portfolio/programs/js-calculator.jpg"></div>
+                    <div class="img-box"><img src="/img/programs/js-calculator.jpg"></div>
                     <div class="text-box">
                         <p>This is a simple JavaScript application that includes:
                             <ol class="fa-ul" style="--fa-li-margin: 1em;">
@@ -226,7 +232,7 @@
                                 <li><span class="fa-li"><i class="fa-solid fa-coins"></i></span> an currency converter</li>
                             </ol>
                         </p>
-                        <a class="link" href="https://github.com/amrusb/JS-Calculator" target="_blank">www<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
+                        <a class="link" href="https://github.com/amrusb/JS-Calculator" target="_blank">code<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
                     </div>
                 </div>
 
@@ -238,6 +244,7 @@
             <p><i class="fa-solid fa-ellipsis"></i></p>
         </div>
     </div>
+    <!-- CONTACT -->
     <div id="contact" class="container text-center section">
         <h1><i class="fa-solid fa-comment"></i>how to reach me?</h1>
         <div class="row">
@@ -271,6 +278,7 @@
         <div class="col-lg-12"><a class="fa-solid fa-chevron-up" href="#"></a></div>
         <div class="col-lg-12 credits">designed by <span class="credits-name">Bartosz Surma</span></div>
     </div>
+    <script src="/fullpage/fullpage.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

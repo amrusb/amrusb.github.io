@@ -17,6 +17,7 @@ const checkAge = () =>{  //setting my current age
 
 $(document).ready(function(){
     checkAge();
+
     $('.frame').find('a').hide();
     $('.frame').click(function(){
         $(this).toggleClass('frame-clicked')
@@ -40,7 +41,7 @@ $(document).ready(function(){
 
     $('.text-box').slideToggle();
     $('.img-box').click(function(){
-        $(this).next().slideToggle(1500);
+        $(this).next().slideToggle(1000);
     });
 
     $('.python').parent().mouseenter(function(){

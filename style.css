@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    padding: 0px;
     font-family: 'Montserrat Alternates', sans-serif;
     color: #010326 !important;
     transition: 0.3s;
@@ -7,7 +8,7 @@
     scroll-behavior: smooth;
 }
 *::-webkit-scrollbar{
-    width: 12px;
+    width: 8px;
     outline: none;
     background-color: #ebebeb;
 }
@@ -18,16 +19,41 @@
 body{
     background-color: #F2F2F2 !important;
 }
-
+/* .header-photo{
+    position: fixed;
+    box-sizing: border-box;
+}
 .heading-photo{
-    position:relative;
+    flex: 1;
     top: 0px;
     left: 0px;
     right: 0px;
+    height: 30vh;
     background-image: url("https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-    box-shadow: inset 0px 0px 10px #01032642;
-    z-index: -1;    
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -4;    
 }
+.heading-text{
+    display:flex;
+    justify-content: center;
+}
+.quote-body{
+    font-family: 'Playfair Display', serif !important;
+    text-indent: 20pt;
+    font-weight: 100!important;
+    font-size: 22pt !important;
+    color: white !important;
+}
+.quote-author{
+    font-family: 'Playfair Display', serif !important;
+    font-size: 18pt !important;
+    font-weight: 100 !important;
+    font-style: italic;
+    color: white !important;
+    opacity: 0.8;
+} */
 
 .header{
     position: sticky;
@@ -46,14 +72,16 @@ body{
     font-weight: 800;
     font-size: 24pt !important;
 }
-.my-btn{
+.navbar-header button{
     border: none !important;
-    background-color: none;
-}
-.my-btn:active{
     background-color: none !important;
 }
-.my-btn:active i, .my-btn:hover i{
+
+.navbar-header button:hover, .navbar-header button:focus{
+    background-color: #F2F2F2!important;
+}
+
+.my-btn:hover i, button:focus i{
     color:#94C6F2 !important;
 }
 
@@ -118,9 +146,11 @@ body{
     .fa-angles-right{
         font-size: 9vw !important;
     }
+    .profile-pic{
+        border: 10px solid #f1c40f;
+    }
     .circle{
-        top: 5%!important;
-        left: 0%!important;
+        display: none;
     }
 }
 @media screen and (max-width: 1200px) and (min-width: 768px){
@@ -156,48 +186,33 @@ h1 i{
 h3 {
     padding: 20px !important;
 }
-.quote{
-    border-left: 10px solid white;
-}
-.quote-body{
-    text-indent: 20pt;
-    font-weight: 500!important;
-    font-size: 22pt !important;
-    color: white !important;
-    font-style: italic;
-}
-.quote-author{
-    font-family: 'Playfair Display', serif !important;
-    font-size: 18pt !important;
-    font-weight: 100 !important;
-    font-style: italic;
-    color: white !important;
-    opacity: 0.8;
-}
-.quote-sign{
-    font-size: 25pt !important;
-    color: #94C6F2 !important;
-}
+
 .profile-pic{
     width: 100%;
     box-shadow: 0px 0px 10px #01032642;
 }
 .circle{
     position: absolute;
-    top: 2%;
+    top: 4%;
     right: 2%;
     z-index: -2;
 }
+.circle circle{
+    transform: translate(50%, 50%);
+}
 h4{
-    font-style: italic;
-    font-weight: 500;
-    font-size: 18pt !important;
-    padding: 20px !important;
+    font-family: 'Playfair Display', serif !important;
+    /* font-style: italic; */
+    font-weight: 100!important;
+    font-size: 20pt !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 h4 i{
     color:#f1c40f !important;
-    font-size: 18pt !important;
-    margin-right: 10px;
+    font-size: 20pt !important;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 h4 a:hover, h4 a:link, h4 a:active{
     text-decoration: none!important;
@@ -258,23 +273,23 @@ h4 a:hover, h4 a:link, h4 a:active{
 /*Timeline*/
 @media screen and (max-width: 1000px) {
     .timeline-event{
-        width: 90%!important;
-        padding: 10px 30px;
+        width: 90% !important;
+        padding: 20px 40px !important;
     }
     .timeline .right{
-        text-align: right!important;
-        left: 0px!important;
-        margin: 10px 0px;
+        text-align: right !important;
+        left: 0px !important;
+        margin: 30px 0px;
     }
-    .timeline .right:after{
-        left: 95%;
+    .timeline .right:after, .timeline .left:after{
+        left: 97%;
     }
-    .right .timeline-text::after{
-        top: 23px!important;
-        left: 106.8%!important;
+    .right .timeline-text::after, .left .timeline-text::after{
+        top: 12%!important;
+        left: 110.8%!important;
+        transform: translate(-110.8%,-12%);
     }
     .timeline::after{
-        /* left: 97.5% !important; */
         left: calc(100% - 23px)!important; 
     }
 }
@@ -286,7 +301,7 @@ h4 a:hover, h4 a:link, h4 a:active{
     content: "";
     position: absolute;
     top: 0;
-    left:50%;
+    left: 50%;
     width: 4px;
     height: 100%;
     background-color: #010326;
@@ -294,61 +309,41 @@ h4 a:hover, h4 a:link, h4 a:active{
 .timeline-event{
     position: relative;
     width: 46%;
-    padding: 10px 30px;
+    padding: 30px 40px;
     background-color: hsl(0, 0%, 95%);
-    box-shadow: 0px 0px 20px #0103262c;
+    box-shadow: 0px 0px 10px #0103262c;
 }
 .timeline .left{
     text-align: right;
     left: 0px;
 }
-.timeline .left:after{
-    content: " ";
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: -1;
-    left: 96%;
-    padding: 3%;
-    background-color: white;
-    transform: rotate(45deg);
-    box-shadow: 0px 0px 20px #0103262c;
-}
-.left .timeline-text::after{
-    content: "";
-    position: absolute;
-    top: 23px;
-    left: 106.3%;
-    background-color: white;
-    border: 5px solid #f1c40f;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #0103261c;
-    width: 30px;
-    height: 30px;
-    z-index: 1;
-}
-
 .timeline .right{
     text-align: left;
     left: 54%;
 }
-.timeline .right:after{
+/*Timeline pointer */
+.timeline .left:after,.timeline .right:after{
     content: " ";
     position: absolute;
     top: 22px;
     width: 0;
-    right: 96%;
     padding: 3%;
-    background-color: white;
+    background-color: hsla(0, 0%, 100%);
     transform: rotate(45deg);
-    box-shadow: 0px 0px 20px #0103262c;
+    box-shadow: 0px 0px 10px #0103262c;
     z-index: -1;
 }
-.right .timeline-text::after{
+.timeline .left:after{
+    left: 97%;
+}
+.timeline .right:after{
+    right: 97%;
+}
+/* Timeline dot */
+.left .timeline-text::after, .right .timeline-text::after{
     content: "";
     position: absolute;
     top: 23px;
-    right: 105.3%;
     background-color: white;
     border: 5px solid #f1c40f;
     border-radius: 50%;
@@ -357,6 +352,15 @@ h4 a:hover, h4 a:link, h4 a:active{
     height: 30px;
     z-index: 1;
 }
+.left .timeline-text::after{
+    left: 112.6%;
+    transform: translate(-112.6%, 0%);
+}
+.right .timeline-text::after{
+    right: 99.7%;
+    transform: translate(-99.7%, 0%);
+}
+
 
 .timeline span{
     color: #94C6F2 !important;
@@ -377,7 +381,8 @@ h4 a:hover, h4 a:link, h4 a:active{
     font-weight: 500;
     font-size: 16pt!important;
 }
-/* skills */
+
+/* SKILLS */
 @media screen and (max-width: 767px){
     .skills h3{
         text-align: center;
@@ -413,10 +418,6 @@ li:hover .c-plus-plus{
 li:hover .java-script{
     color: #efcf1d!important;
 }
-
-li:hover .python{
-    color: #3470A2!important;
-}
 li:hover .html{
     color: #E96228!important;
 }
@@ -451,6 +452,12 @@ li:hover .visual-studio-code{
     color: #24ABED!important;
 }
 
+.description{
+    margin: 40px 0px;
+    line-height: 2;
+    text-indent: 20pt;
+    text-align: justify;
+}
 /* GALLERY */
 @media screen and (max-width: 1000px) {
     .gallery{
@@ -469,6 +476,7 @@ li:hover .visual-studio-code{
     box-sizing: border-box;
     height: 90vh;
     max-height: 692px;
+    margin-bottom: 40px;
 }
 .frame {
     flex: 1;
@@ -497,13 +505,6 @@ li:hover .visual-studio-code{
     font-size: 20pt!important;
     z-index: 3;
 }
-/* .frame > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6;
-} */
 
 .frame:hover > img {
     transform: scale(1.04);
@@ -543,7 +544,6 @@ li:hover .visual-studio-code{
     width: 49%!important;
     margin: 5px;
     background-color: #F2F2F2;
-    /* padding: 10px; */
     box-shadow: 0px 0px 30px rgba(0,0,0,.1);
 }
 
@@ -552,9 +552,11 @@ li:hover .visual-studio-code{
     object-fit: contain; 
     cursor: pointer;
     transition: 0.9!important;
+    filter:opacity(60%) grayscale(60%);
 }
 .program-box img:hover{
     transform: scale(1.15);
+    filter:opacity(1) grayscale(0);
 }
 .text-box{
     width: 100%;
@@ -567,6 +569,7 @@ li:hover .visual-studio-code{
 
 .text-box .link{
     display:block;
+    font-family: 'Consolas';
     font-size: 12pt!important;
     font-weight: 700;
     text-align:center;
