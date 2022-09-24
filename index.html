@@ -27,41 +27,32 @@
                 <button  class="navbar-toggle my-btn" data-toggle="collapse" data-target="#myNavbar">
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
-                <a class="navbar-brand" href="#">Bartosz Surma</a>
+                <a class="navbar-brand">Bartosz Surma</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about-me">about</a></li>
-                    <li><a href="#education">education</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a >about</a></li>
+                    <li><a >education</a></li>
+                    <li><a >portfolio</a></li>
+                    <li><a >contact</a></li>
                 </ul>
               </div>
             </div>
           </nav>
     </div>
-    <!-- <div class="header-photo">
-        <div class="heading-photo">
-            <div class="container heading-text">
-                <div class="col-lg-12">
-                    <p class="quote-body">"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</p>
-                    <p class="quote-author">— Linus Torvalds</p>                        
-                </div>
-            </div>  
-        </div>
-    </div> -->
+    
     <!-- Home -->
     <div class="container section home">
         <div class="row">
             <div class="col-sm-6 welcome-div">
-                <i class="fa-solid fa-angles-right"></i>
+                <i class="fa-solid first-angles fa-angles-right"></i>
                 <p class="welcome">Hello, world!</p>
                 <p class="welcome">I'm Bartosz!<i class="fa-solid fa-window-minimize fa-fade" style="--fa-animation-duration: 1.5s; --fa-fade-opacity: 0;"></i></p>
                 <p class="small-welcome">ambition fuels me</p>
                 <p class="small-welcome">dreams motivate me</p>
-                <i class="fa-solid fa-angles-right fa-pull-right" style="transform:rotate(270deg)"></i>
+                <i class="fa-solid second-angles fa-angles-right fa-pull-right" style="transform:rotate(270deg)"></i>
             </div>
-            <div class="col-sm-6 text-center">
+            <div class="col-sm-6 text-center photo-div">
                 <img class="img-circle profile-pic" src="/img/myself.jpg" alt="Bartosz Surma">
                 <svg width="100%" height="100%" class="circle">
                     <circle r="48%" fill="#f1c40f"></circle>
@@ -69,8 +60,16 @@
             </div>     
         </div>
     </div>
+    <div class="container-fluid  quote-photo">
+        <div class="container quote-text">
+            <div class="col-lg-12">
+                <p class="quote-body">&bdquo;Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.&rdquo;</p>
+                <p class="quote-author">— Linus Torvalds</p>                        
+            </div>
+        </div>  
+    </div>
     <!-- ABOUT-->
-    <div id="about-me" class="container section">
+    <div id="about" class="container section">
         <h1><i class="fa-solid fa-user-large"></i></i>who am I?</h1>
         <div class="row  text-justify">
             <div class="col-lg-12 content">
@@ -176,7 +175,7 @@
         <h1><i class="fa-solid fa-folder"></i>what do I make?</h1>
         <div class="row">
             <h4><i class="fa-solid fa-palette"></i>I design graphics<i class="fa-solid fa-palette"></i></h4>
-            <p class="description"><i>Graphic designing</i> become one of my hobbies. I am not a profesional graphic designer, but I enjoy doing it. My friends, for whom I make those graphics, say that they like my designs, so I am always eager to make posters. Here you can see some of my works.</p>
+            <div class="description col-sm-12"><i>Graphic designing</i> become one of my hobbies. I am not a profesional graphic designer, but I enjoy doing it. My friends, for whom I make those graphics, say that they like my designs, so I am always eager to make posters. Here you can see some of my works.</div>
             <div class="gallery container">
                 <div class="frame">
                     <img src="/img/graphics/akatyst.jpg" alt="poster_1">
@@ -210,9 +209,7 @@
         </div>
             <!-- PROGRAMMING -->
         <div class="row">
-            <h4><i class="fa-solid fa-code"></i>I write programs<i class="fa-solid fa-code"></i></h4>
-            <p class="description"></p>
-            <div class="programs">
+            <h4><i class="fa-solid fa-code"></i>I write programs<i class="fa-solid fa-code"></i></h4>            <div class="programs">
                 <div class="program-box">
                     <div class="img-box"><img src="/img/programs/cpp-mastermind.jpg"></div>
                     <div class="text-box">
@@ -226,11 +223,11 @@
                     <div class="img-box"><img src="/img/programs/js-calculator.jpg"></div>
                     <div class="text-box">
                         <p>This is a simple JavaScript application that includes:
-                            <ol class="fa-ul" style="--fa-li-margin: 1em;">
-                                <li><span class="fa-li"><i class="fa-solid fa-calculator"></i></span> a calculator</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-temperature-three-quarters"></i></span> a temperature converter</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-coins"></i></span> an currency converter</li>
-                            </ol>
+                            <ul class="fa-ul" style="--fa-li-margin: 3em;">
+                                <li><i class="fa-solid fa-calculator --fa-li-margin: 3em;"></i>a calculator</li>
+                                <li><i class="fa-solid fa-temperature-three-quarters"></i>a temperature converter</li>
+                                <li><i class="fa-solid fa-coins"></i> an currency converter</li>
+                            </ul>
                         </p>
                         <a class="link" href="https://github.com/amrusb/JS-Calculator" target="_blank">code<i class="fa-solid fa-hand-pointer fa-beat"></i></a>
                         <a class="link" href="/js-calculator/">app<i class="fa-solid fa-hand-pointer fa-beat"></i></a>
@@ -239,11 +236,10 @@
                 <div class="program-box">
                     <div class="img-box"><img src="/img/programs/hangman.jpg"></div>
                     <div class="text-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo odio ad modi, doloribus, quae a labore omnis eveniet officiis quas eos! Dolores quibusdam voluptates sed error molestias, reprehenderit nulla.</p>
+                        <p><strong>Hangman</strong> is a simple console game, where player has to guess the word letter by letter in few moves. It has been written in <strong>python</strong>.</p>
                         <a class="link" href="https://github.com/amrusb/hangman" target="_blank">code<i class="fa-solid fa-hand-pointer fa-beat" ></i></a>
                     </div>
-                </div>
-            </div>   
+                </div>  
         </div>
     </div>
     <div class="container divider text-center">
@@ -282,12 +278,13 @@
         </div>
     </div>
     <div class="container-fluid footer text-center">
-        <div class="col-lg-12"><a class="fa-solid fa-chevron-up" href="#"></a></div>
-        <div class="col-lg-12 credits">designed by <span class="credits-name">Bartosz Surma</span></div>
+        <a class="fa-solid fa-chevron-up" href="#"></a>
+        <p class="credits">designed by <span class="credits-name">Bartosz Surma</span></p>
     </div>
     <script src="./script/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
     <script src="script\animations.js"></script>
 </body>
 </html>
