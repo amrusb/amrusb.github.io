@@ -1,3 +1,4 @@
+// gsap.registerPlugin(ScrollTrigger);
 const galleryImages = document.querySelectorAll('.gallery img');
 
 const checkAge = () => {  //setting my current age
@@ -18,6 +19,7 @@ const checkAge = () => {  //setting my current age
 $(document).ready(function () {
     checkAge();
 
+    //SMALL GALLERY
     $('.frame').find('a').hide();
     $('.frame').click(function () {
         $(this).toggleClass('frame-clicked')
@@ -29,6 +31,25 @@ $(document).ready(function () {
             }
         });
     })
+    //FULL GALLERY
+    $('.full-gallery').hide();
+    $('.maxsimalise').click((e) => {
+        let srcVal = $(e.target).siblings('img').attr('src');
+        $('.full-gallery img').attr('src', srcVal);
+        $('body').toggleClass('scrollLock');
+        $('.full-gallery').fadeIn();
+    })
+    $('.close-mark').click(() => {
+        $('body').toggleClass('scrollLock');
+        $('.full-gallery').fadeOut();
+    })
+    $('.full-gallery').click((e) => {
+        console.log(e.target.localName);
+        if (e.target.localName != 'img' && e.target.localName != 'i') {
+            $('body').toggleClass('scrollLock');
+            $('.full-gallery').fadeOut();
+        }
+    })
 
     $('*').click(function (e) {
         if (!e.target.parentElement.classList.contains('frame')) {
@@ -38,10 +59,9 @@ $(document).ready(function () {
             })
         }
     })
-
-    $('.text-box').slideToggle();
+    $('.text-box').hide();
     $('.img-box').click(function () {
-        $(this).next().slideToggle(1000);
+        $(this).next().slideToggle(1500);
     });
 
     $('.python').parent().mouseenter(function () {
@@ -50,4 +70,5 @@ $(document).ready(function () {
     $('.python').parent().mouseleave(function () {
         $('.python').attr('icon', 'simple-icons:python');
     });
+
 });
