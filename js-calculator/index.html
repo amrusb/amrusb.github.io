@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fd1639acc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="body">
+        <!-- menu -->
+        <div class="menu">
+            <i class="fa-solid fa-bars fa-sm"></i><i class="fa-solid fa-xmark fa-lg hide"></i><span class="menu-display-info">Calculator</span>
+            <div class="full-menu">
+                <div class="menuItems hide">
+                    <li class="calc choosen"><div><i class="fa-solid fa-calculator"></i><p>Calculator</p></div></li>
+                    <li class="temp"><div><i class="fa-solid fa-temperature-three-quarters"></i><p>Temperature</p></div></li>
+                    <li class="curr"><div><i class="fa-solid fa-coins"></i><p>Currency</p></div></li>
+                </div>
+                <div class="credits hide">
+                    <p>Made by: <span style="font-weight:400;">Bartosz Surma</span></p>
+                    <div class="links">
+                        <p><i class="fa-brands fa-github"></i> github: <a href="https://github.com/amrusb" target="_blank">amrusb<i class="fa-solid fa-arrow-pointer fa-xs" style="vertical-align:sub;"></i></a></p>
+                        <p><i class="fa-brands fa-linkedin"></i> likedIn: <a href="https://www.linkedin.com/in/bartosz-surma-b44a29225" target="_blank">Bartosz Surma<i class="fa-solid fa-arrow-pointer fa-xs" style="vertical-align:sub;"></i></a></p>
+                        <p><i class="fa-solid fa-globe"></i> website: <a href="https://amrusb.github.io/" target="_blank">www<i class="fa-solid fa-arrow-pointer fa-xs" style="vertical-align:sub;"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- calculator -->
+        <div class="calculator">
+            <div class="screen">
+                <div>
+                    <p class="current-operation"></p>
+                    <p class="input">0</p>
+                    <p class="error-msg"></p>
+                </div>
+            </div>
+            <div class="numpad">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td><button class="ce">CE</button></td>
+                        <td><button class="c">C</button></td>
+                        <td><button class="del"><i class="fa-solid fa-delete-left fa-sm"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="reverse sign">1/x</button></td>
+                        <td><button class="square sign">x<span class="sign"style="vertical-align: super;">2</span></button></td>
+                        <td><button class="square-root sign"><i class="fa-solid fa-square-root-variable fa-sm"></i></button></td>
+                        <td><button class="divide sign"><i class="fa-solid fa-divide fa-sm"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="pi-num">&pi;</button></td>
+                        <td><button class="e-num">e</button></td>
+                        <td><button class="abs sign">|x|</button></td>
+                        <td><button class="factorial sign">n!</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 7">7</button></td>
+                        <td><button class="num 8">8</button></td>
+                        <td><button class="num 9">9</button></td>
+                        <td><button class="multiply sign"><i class="fa-solid fa-plus fa-sm" style="transform: rotate(45deg);"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 4">4</button></td>
+                        <td><button class="num 5">5</button></td>
+                        <td><button class="num 6">6</button></td>
+                        <td><button class="subtract sign"><i class="fa-solid fa-minus fa-sm"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 1">1</button></td>
+                        <td><button class="num 2">2</button></td>
+                        <td><button class="num 3">3</button></td>
+                        <td> <button class="add sign"><i class="fa-solid fa-plus fa-sm"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="change-sign sign"><i class="fa-solid fa-plus-minus fa-sm"></i></button></td>
+                        <td><button class="num 0">0</button></td>
+                        <td><button class="dot">.</button></td>
+                        <td><button  class="equal sign"><i class="fa-solid fa-equals fa-sm"></i></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- temperature converter -->
+        <div class="temp-convert hide">
+            <div class="screen">
+                <table>
+                    <tr>
+                        <td>
+                            <p class="temp-input">0</p>
+                            <select name="temperature" id="temp-input-choose" >
+                                <option value="C">°C</option>
+                                <option value="F">°F</option>
+                                <option value="K">°K</option>
+                            </select>
+                            </td>
+                        <td>
+                            <i class="fa-solid fa-equals"></i>
+                        </td>
+                        <td> 
+                            <p class="temp-output"></p>
+                            <select name="temperature" id="temp-output-choose">
+                                <option value="F">°F</option>
+                                <option value="K">°K</option>
+                                <option value="C">°C</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="numpad">
+                <table>
+                    <tr>
+                        <td><button class="reverseBtn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button></td>
+                        <td><button class="ce">CE</button></td>
+                        <td><button class="del"><i class="fa-solid fa-delete-left fa-sm"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 7">7</button></td>
+                        <td><button class="num 8">8</button></td>
+                        <td><button class="num 9">9</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 4">4</button></td>
+                        <td><button class="num 5">5</button></td>
+                        <td><button class="num 6">6</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 1">1</button></td>
+                        <td><button class="num 2">2</button></td>
+                        <td><button class="num 3">3</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="change-sign sign"><i class="fa-solid fa-plus-minus fa-sm"></i></button></td>
+                        <td><button class="num 0">0</button></td>
+                        <td><button class="dot">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- currency converter -->
+        <div class="curr-convert hide">
+            <div class="screen">
+                <table>
+                    <tr>
+                        <td>
+                            <p class="currency-input">1</p>
+                            <select name="currency-code" id="currency-code-input">
+                                <option value="PLN">PLN</option>
+                            </select>
+                            <i class="fa-solid fa-circle-question hint"></i>
+                            <div class="currency-name hide"></div>
+                            </td>
+                        <td>
+                            <i class="fa-solid fa-equals"></i>
+                        </td>
+                        <td> 
+                            <p class="currency-output"></p>
+                            <select name="currency-code" id="currency-code-output">
+                                <option value="EUR">EUR</option>
+                            </select>
+                            <i class="fa-solid fa-circle-question hint"></i>
+                            <div class="currency-name hide"></div>
+                        </td>
+                    </tr>
+                </table>
+                <p class="rate-info"></p>
+            </div>
+            <div class="numpad">
+                <table>
+                    <tr>
+                        <td><button class="reverseBtn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button></td>
+                        <td><button class="ce">CE</button></td>
+                        <td><button class="del"><i class="fa-solid fa-delete-left fa-sm"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 7">7</button></td>
+                        <td><button class="num 8">8</button></td>
+                        <td><button class="num 9">9</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 4">4</button></td>
+                        <td><button class="num 5">5</button></td>
+                        <td><button class="num 6">6</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num 1">1</button></td>
+                        <td><button class="num 2">2</button></td>
+                        <td><button class="num 3">3</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="num 0">0</button></td>
+                        <td><button class="dot">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script/menu.js"></script>
+    <script src="script/calculator.js"></script>
+    <script src="script/temp-convert.js"></script>
+    <script src="script/currency-convert.js"></script>
+</body>
+</html>

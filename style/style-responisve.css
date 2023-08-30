@@ -1,0 +1,68 @@
+@media screen and (max-width: 767px) {
+    .welcome{
+        font-size: 11vw !important;
+    }
+    .small-welcome{
+        font-size: 4vw !important;
+    }
+    .fa-angles-right{
+        font-size: 9vw !important;
+    }
+    .profile-pic{
+        border: 10px solid var(--TERTIARY_COLOUR);
+    }
+    .welcome-div .circle-lg,.welcome-div .circle{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .frame{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .frame img:first-child, .frame img:nth-child(2), .frame img:nth-child(3){
+        position: inherit;
+        height: 33vh;
+        display: inline;
+        margin: 5px;
+        border: solid 5px var(--TERTIARY_COLOUR);
+    }
+    .frame img:nth-child(2){
+        height: 40vh;
+    }
+    #about h2{
+        margin-top: 30px!important;
+    }
+
+    .skills {
+        padding: 5px !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .skill-item{
+        width: 20vw !important;
+    }
+    .portfolio-type{
+        display:block;
+        width: 100%!important;
+    }
+    .portfolio-type.line::after{
+        display: none;
+    }
+    .project-carousel .project-item{
+        width: calc(90%);
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .welcome{
+        font-size: 5vw !important;
+    }
+    .small-welcome{
+        font-size: 2.5vw !important;
+    }
+    .fa-angles-right{
+        font-size: 5vw !important;
+    }
+}

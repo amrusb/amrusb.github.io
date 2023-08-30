@@ -1,0 +1,222 @@
+/*Timeline*/
+@media screen and (max-width: 1000px) {
+    .timeline-event{
+        width: 90% !important;
+        padding: 20px 40px !important;
+    }
+    .timeline .right{
+        text-align: right !important;
+        left: 0px !important;
+        margin: 30px 0px;
+    }
+    .timeline .right:after, .timeline .left:after{
+        left: 97%;
+    }
+    .right .timeline-text::after, .left .timeline-text::after{
+        top: 12%!important;
+        left: 109.5%!important;
+        transform: translate(-109.5%,-12%);
+    }
+    .timeline::after{
+        left: calc(100% - 23px)!important; 
+    }
+}
+.timeline{
+    position: relative;
+    margin-bottom: 60px;
+}
+.timeline::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background-color: var(--MAIN_COLOUR);
+}
+.timeline-event{
+    position: relative;
+    width: 46%;
+    padding: 30px 40px;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 10px var(--SHADOW);
+}
+.timeline .left{
+    text-align: right;
+    left: 0px;
+}
+.timeline .right{
+    text-align: left;
+    left: 54%;
+}
+/*Timeline pointer */
+.timeline .left:after,.timeline .right:after{
+    content: " ";
+    position: absolute;
+    top: 22px;
+    width: 0;
+    padding: 2.5%;
+    background-color: hsla(0, 0%, 100%);
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 10px var(--SHADOW);
+    z-index: -1;
+}
+.timeline .left:after{
+    left: 97%;
+}
+.timeline .right:after{
+    right: 97%;
+}
+/* Timeline dot */
+.left .timeline-text::after, .right .timeline-text::after{
+    content: "";
+    position: absolute;
+    top: 23px;
+    background-color: white;
+    border: 5px solid var(--TERTIARY_COLOUR);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--SHADOW);
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+.left .timeline-text::after{
+    left: 111.5%;
+    transform: translate(-111.5%, 0%);
+}
+.right .timeline-text::after{
+    right: 102.5%;
+    transform: translate(-102.5%, 0%);
+}
+
+
+.timeline span{
+    color: var(--SECONDARY_COLOUR) !important;
+    margin-right: 10px;
+}
+.timeline h5, h5 span{
+    font-weight: 500;
+    font-size: 18pt !important;
+    margin-bottom: 10px;
+}
+.timeline h6{
+    font-size: 16pt!important;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.timeline-text .city-name{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 500;
+    font-size: 16pt!important;
+}
+/*Timeline*/
+@media screen and (max-width: 1000px) {
+    .timeline-event{
+        width: 90% !important;
+        padding: 20px 40px !important;
+    }
+    .timeline .right{
+        text-align: right !important;
+        left: 0px !important;
+        margin: 30px 0px;
+    }
+    .timeline .right:after, .timeline .left:after{
+        left: 97%;
+    }
+    .right .timeline-text::after, .left .timeline-text::after{
+        top: 12%!important;
+        left: 109.5%!important;
+        transform: translate(-109.5%,-12%);
+    }
+    .timeline::after{
+        left: calc(100% - 23px)!important; 
+    }
+}
+.timeline{
+    position: relative;
+    margin-bottom: 60px;
+}
+.timeline::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background-color: var(--MAIN_COLOUR);
+}
+.timeline-event{
+    position: relative;
+    width: 46%;
+    padding: 30px 40px;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 10px var(--SHADOW);
+}
+.timeline .left{
+    text-align: right;
+    left: 0px;
+}
+.timeline .right{
+    text-align: left;
+    left: 54%;
+}
+/*Timeline pointer */
+.timeline .left:after,.timeline .right:after{
+    content: " ";
+    position: absolute;
+    top: 22px;
+    width: 0;
+    padding: 2.5%;
+    background-color: hsla(0, 0%, 100%);
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 10px var(--SHADOW);
+    z-index: -1;
+}
+.timeline .left:after{
+    left: 97%;
+}
+.timeline .right:after{
+    right: 97%;
+}
+/* Timeline dot */
+.left .timeline-text::after, .right .timeline-text::after{
+    content: "";
+    position: absolute;
+    top: 23px;
+    background-color: white;
+    border: 5px solid var(--TERTIARY_COLOUR);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--SHADOW);
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+.left .timeline-text::after{
+    left: 111.5%;
+    transform: translate(-111.5%, 0%);
+}
+.right .timeline-text::after{
+    right: 102.5%;
+    transform: translate(-102.5%, 0%);
+}
+
+
+.timeline span{
+    color: var(--SECONDARY_COLOUR) !important;
+    margin-right: 10px;
+}
+.timeline h5, h5 span{
+    font-weight: 500;
+    font-size: 18pt !important;
+    margin-bottom: 10px;
+}
+.timeline h6{
+    font-size: 16pt!important;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.timeline-text .city-name{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 500;
+    font-size: 16pt!important;
+}
