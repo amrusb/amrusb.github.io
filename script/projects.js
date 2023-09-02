@@ -56,12 +56,16 @@ const dragStop = () => {
 }
 
 $(document).ready(function () {
-    carousel.addEventListener("mousedown", dragStart);
-    carousel.addEventListener("touchstart", dragStart);
-    document.addEventListener("mousemove", dragging);
-    carousel.addEventListener("touchmove", dragging);
-    document.addEventListener("mouseup", dragStop);
-    carousel.addEventListener("touchend", dragStop);
+    if(window.screen.width > 766){
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("touchstart", dragStart);
+        document.addEventListener("mousemove", dragging);
+        carousel.addEventListener("touchmove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("touchend", dragStop);
+    }
+    
 })
 }
 )();
+

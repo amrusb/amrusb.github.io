@@ -1,14 +1,5 @@
-:root{
-  --BG_COLOUR: #F2F2F2;
-  --MAIN_COLOUR:#010326;
-  --SHADOW: #0103262c;
-  --SECONDARY_COLOUR: #94C6F2;
-  --TERTIARY_COLOUR: #f1c40f;
-}
-
 .poster-wrapper{
     display: flex;
-    
     position: relative;
   }
   .poster-wrapper i{
@@ -17,11 +8,10 @@
     width: 44px;
     color: var(--MAIN_COLOUR);
     cursor: pointer;
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
     position: absolute;
     text-align: center;
     line-height: 44px;
-    
     background: var(--BG_COLOUR);
     box-shadow: 0px 0px 5px 2px var(--SHADOW);
     border-radius: 50%;
@@ -33,7 +23,6 @@
     transform: translateY(-50%) scale(0.9);
   }
   .poster-wrapper i:hover{
-    font-size: 1.45rem !important;
     background: var(--SECONDARY_COLOUR);
     color: var(--BG_COLOUR) !important;
     border: solid 2px var(--BG_COLOUR);
@@ -88,7 +77,5 @@
     }
   }
   @media screen and (max-width: 550px) {
-    .poster-carousel img{
-      width: calc(100% / 2);
-    }
+    
   }

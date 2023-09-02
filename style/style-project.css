@@ -58,13 +58,13 @@
     right: -22px;
 }
 .project-wrapper .project-carousel{
+    line-height: 50%;
     padding: 30px;
-    font-size: 0px;
-
     cursor: grab;
     overflow: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
+    height: 90vh;
 }
 .project-carousel.dragging{
     cursor: grab;
@@ -83,10 +83,12 @@
     z-index: 2;
     white-space: break-spaces;
     text-align: left;
-    padding: 45px;
+    padding: 50px;
+    font-display: block;
     border: solid 3px var(--MAIN_COLOUR);
     border-radius: 8px;
     background-color: #f2f2f2ab;
+    font-size: 14pt;
 }
 .project-carousel.dragging{
     cursor: grab;

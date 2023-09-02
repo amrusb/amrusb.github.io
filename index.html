@@ -20,8 +20,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Bartosz Surma</title>
 </head>
-<body>
-    <div id="blob"></div>
+<body class="scrollLock">
+    <div class="loading-screen"><i class="fa-solid fa-gear"></i></div>
     <div id="blob"></div>
     <!-- Header Nav -->
     <div class="header">
@@ -51,17 +51,11 @@
             <div class="col-sm-6 welcome-div">
                 <i class="fa-solid first-angles fa-angles-right"></i>
                 <div class="main-wrapper">
-                    <p><p class="main-text"  data-value="hello, world!">hello, world!</p></p>
+                    <p class="main-text"  data-value="hello, world!">hello, world!</p>
                     <p><p class="main-text" id="typing-animation" data-value="i'm Bartosz!"> <p id="karetka"></p></p></p>
                     <p class="sub-text" id="hacking-animation" data-value="coding & designing">coding & designing</p>
                 </div>
                 <i class="fa-solid second-angles fa-angles-right fa-pull-right" style="transform:rotate(270deg)"></i>
-                <svg width="90%" height="90%" class="circle">
-                    <circle r="48%" ></circle>
-                </svg>
-                <svg width="100%" height="100%" class="circle-lg">
-                    <circle r="48%" ></circle>
-                </svg>
                 <svg width="90%" height="90%" class="circle">
                     <circle r="48%" ></circle>
                 </svg>
@@ -85,12 +79,10 @@
                 <img class="img-circle profile-pic" src="img\pics\surma-bartosz.jpg" alt="Bartosz Surma">
                 <svg width="100%" height="100%" class="circle">
                     <circle r="48%" ></circle>
-                    <circle r="48%" ></circle>
                 </svg>
             </div>     
         </div>
     </div>
-    <!-- Quote -->
     <!-- Quote -->
     <div class="container-fluid  quote-photo">
         <div class="container quote-text">
@@ -132,31 +124,31 @@
         <!--SKILLS-->
         <div class="row skills">
             <div class="skill-item">
-                <img src="img\icons\java.png" alt="java-icon">
+                <img src="img\icons\java.png" alt="java-icon" draggable="false">
                 <p class="caption">Java</p>
             </div>
             <div class="skill-item">
-                <img src="img\icons\cpp.png" alt="cpp-icon">
+                <img src="img\icons\cpp.png" alt="cpp-icon" draggable="false">
                 <p class="caption">C++</p>
             </div>
             <div class="skill-item">
-                <img src="img\icons\java-script.png" alt="java-script-icon">
+                <img src="img\icons\java-script.png" alt="java-script-icon" draggable="false">
                 <p class="caption">Javascript</p>
             </div>
             <div class="skill-item">
-                <img src="img\icons\html.png" alt="html-icon">
+                <img src="img\icons\html.png" alt="html-icon" draggable="false">
                 <p class="caption">HTML</p>
             </div>
             <div class="skill-item">
-                <img src="img\icons\css.png" alt="css-icon">
+                <img src="img\icons\css.png" alt="css-icon" draggable="false">
                 <p class="caption">CSS</p>
             </div>
             <div class="skill-item">
-                <img src="img\icons\mysql.png" alt="mysql-icon">
+                <img src="img\icons\mysql.png" alt="mysql-icon" draggable="false">
                 <!-- <p class="caption">MySQL</p> -->
             </div>
             <div class="skill-item">
-                <img src="img\icons\uml.png" alt="uml-icon">
+                <img src="img\icons\uml.png" alt="uml-icon" draggable="false">
                 <!-- <p class="caption">UML</p>             -->
             </div>
         </div>
@@ -168,76 +160,78 @@
     </div>
     <!-- PORTFOLIO -->
     <div id="portfolio" class="container text-center section">
-        <h2>&mdash; portfolio</h2>
-        <h1 data-value="what do I make" >what do I make</h1>
-        <div class="portfolio-type-wrapper">        
-            <p class="portfolio-type active line" style="text-align:right" data-value="coding">coding</p><p class="portfolio-type" style="text-align:left" data-value="designing">designing</p>
-        </div>
-        <div class="row poster-wrapper hide">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="poster-carousel">
-              <img class="carousel-img" src="\img\graphics\akatyst.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\katechezy.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\czuwanie-bierzowanie.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\czuwanie-popieluskzo.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\czuwanie-listopad.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\misje_święte.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\warsztaty_muzyki_liturgicznej.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\rekolekcjie_liturgiczne.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\piekno_i_kicz.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="\img\graphics\rekolekcjie_liturgiczne_2023.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="img\graphics\35-ppgjg.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="img\graphics\pielgrzymka-rywald.jpg" alt="img" draggable="false">
-              <img class="carousel-img" src="img\graphics\czuwanie-krzyz.jpg" alt="img" draggable="false">
+        <div class="row">
+            <h2>&mdash; portfolio</h2>
+            <h1 data-value="what do I make" >what do I make</h1>
+            <div class="portfolio-type-wrapper">        
+                <p class="portfolio-type active line" style="text-align:right" data-value="coding">coding</p><p class="portfolio-type" style="text-align:left" data-value="designing">designing</p>
             </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
-          </div>
-            <!-- PROGRAMMING -->
-        <div class="row project-wrapper">
-            <i id="left" class="fa-solid fa-angle-left controls"></i>
-            <div class="project-carousel">
-                <div class="project-item">
-                    <div class="project-icon"><i class="fa-brands fa-java"></i></div>
-                    <h4>Expense menager</h4>
-                    <p class="description">This program allows the user to control their budget by managing expenses. The application uses a relational database to collect, search and process information about the user's expenses. The program allows the user to make changes to the database by adding, editing or deleting a record corresponding to the user's expense or account.</p>
-                    <!-- <div class="project-links">
-                        <a class="fa-solid fa-code" href="https://github.com/amrusb/ExpenseManager"></a><a class="fa-regular fa-file-lines" href="https://github.com/amrusb/ExpenseManager/blob/master/readme.md"></a>
-                    </div> -->
+            <div class="poster-wrapper hide">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="poster-carousel">
+                  <img class="carousel-img" src="\img\graphics\akatyst.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\katechezy.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\czuwanie-bierzowanie.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\czuwanie-popieluskzo.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\czuwanie-listopad.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\misje_święte.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\warsztaty_muzyki_liturgicznej.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\rekolekcjie_liturgiczne.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\piekno_i_kicz.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="\img\graphics\rekolekcjie_liturgiczne_2023.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="img\graphics\35-ppgjg.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="img\graphics\pielgrzymka-rywald.jpg" alt="img" draggable="false">
+                  <img class="carousel-img" src="img\graphics\czuwanie-krzyz.jpg" alt="img" draggable="false">
                 </div>
-                <div class="project-item">
-                    <div class="project-icon"><i class="fa-brands fa-java"></i></div>
-                    <h4>Image Segmentation</h4>
-                    <p class="description">This program showcases diverse methods for image segmentation, employing algorithms like k-means, region growing, Otsu thresholding, and adaptive thresholding with an integral image. It automates image partitioning into segments, enabling users to extract and analyze image components like objects, background, and contours.</p>
-                    <!-- <div class="project-links">
-                        <a class="fa-solid fa-code" href="https://github.com/amrusb/ImageSegmentation"></a><a class="fa-regular fa-file-lines" href="#"></a>
-                    </div> -->
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+                <!-- PROGRAMMING -->
+            <div class="project-wrapper">
+                <i id="left" class="fa-solid fa-angle-left controls"></i>
+                <div class="project-carousel">
+                    <div class="project-item">
+                        <div class="project-icon"><i class="fa-brands fa-java"></i></div>
+                        <h4>Expense menager</h4>
+                        <p class="description">This program allows the user to control their budget by managing expenses. The application uses a relational database to collect, search and process information about the user's expenses. The program allows the user to make changes to the database by adding, editing or deleting a record corresponding to the user's expense or account.</p>
+                        <!-- <div class="project-links">
+                            <a class="fa-solid fa-code" href="https://github.com/amrusb/ExpenseManager"></a><a class="fa-regular fa-file-lines" href="https://github.com/amrusb/ExpenseManager/blob/master/readme.md"></a>
+                        </div> -->
+                    </div>
+                    <div class="project-item">
+                        <div class="project-icon"><i class="fa-brands fa-java"></i></div>
+                        <h4>Image Segmentation</h4>
+                        <p class="description">This program showcases diverse methods for image segmentation, employing algorithms like k-means, region growing, Otsu thresholding, and adaptive thresholding with an integral image. It automates image partitioning into segments, enabling users to extract and analyze image components like objects, background, and contours.</p>
+                        <!-- <div class="project-links">
+                            <a class="fa-solid fa-code" href="https://github.com/amrusb/ImageSegmentation"></a><a class="fa-regular fa-file-lines" href="#"></a>
+                        </div> -->
+                    </div>
+                    <div class="project-item">
+                        <div class="project-icon"><i class="fa-brands fa-java"></i></div>
+                        <h4>Snake</h4>
+                        <p class="description">Snake is a classic game where you command a snake that maneuvers across the board. Your objective is to devour fruits, enabling the snake to grow. However, be cautious not to collide with its own tail or strike the wall, as this signifies the game's end. With each consumed fruit, the snake elongates, introducing more challenges and complexities.</p>
+                        <!-- <div class="project-links">
+                            <a class="fa-solid fa-code" href="https://github.com/amrusb/Snake"></a><a class="fa-regular fa-file-lines" href="#"></a>
+                        </div> -->
+                    </div>
+                    <div class="project-item">
+                        <div class="project-icon"><i class="fa-solid fa-c cpp"></i><i class="fa-solid fa-plus cpp"></i><i class="fa-solid fa-plus cpp"></i></div>
+                        <h4>Mastermind</h4>
+                        <p class="description">This is a strategic logic game that presents you with the challenge of uncovering a secret code, which is the sequence of colors hidden by opponent. Using the clues provided after each attempt, you must deduce and experiment to unveil the correct color combination. The game requires observation, logical thinking, and the skill of deduction.</p>
+                        <!-- <div class="project-links">
+                            <a class="fa-solid fa-code" href="https://github.com/amrusb/Mastermind"></a><a class="fa-regular fa-file-lines" href="#"></a>
+                        </div> -->
+                    </div>
+                    <div class="project-item">
+                        <div class="project-icon"><i class="fa-brands fa-square-js"></i></div>
+                        <h4>Calculator</h4>
+                        <p class="description">This app allows to perform basic mathematical operations, convert currencies using current exchange rates, and switch between temperature units using this convenient tool.</p>
+                        <!-- <div class="project-links">
+                            <a class="fa-solid fa-code" href="https://github.com/amrusb/JS-Calculator"></a><a class="fa-regular fa-file-lines" href="#"></a>
+                        </div> -->
+                    </div>
                 </div>
-                <div class="project-item">
-                    <div class="project-icon"><i class="fa-brands fa-java"></i></div>
-                    <h4>Snake</h4>
-                    <p class="description">Snake is a classic game where you command a snake that maneuvers across the board. Your objective is to devour fruits, enabling the snake to grow. However, be cautious not to collide with its own tail or strike the wall, as this signifies the game's end. With each consumed fruit, the snake elongates, introducing more challenges and complexities.</p>
-                    <!-- <div class="project-links">
-                        <a class="fa-solid fa-code" href="https://github.com/amrusb/Snake"></a><a class="fa-regular fa-file-lines" href="#"></a>
-                    </div> -->
-                </div>
-                <div class="project-item">
-                    <div class="project-icon"><i class="fa-solid fa-c cpp"></i><i class="fa-solid fa-plus cpp"></i><i class="fa-solid fa-plus cpp"></i></div>
-                    <h4>Mastermind</h4>
-                    <p class="description">This is a strategic logic game that presents you with the challenge of uncovering a secret code, which is the sequence of colors hidden by opponent. Using the clues provided after each attempt, you must deduce and experiment to unveil the correct color combination. The game requires observation, logical thinking, and the skill of deduction.</p>
-                    <!-- <div class="project-links">
-                        <a class="fa-solid fa-code" href="https://github.com/amrusb/Mastermind"></a><a class="fa-regular fa-file-lines" href="#"></a>
-                    </div> -->
-                </div>
-                <div class="project-item">
-                    <div class="project-icon"><i class="fa-brands fa-square-js"></i></div>
-                    <h4>Calculator</h4>
-                    <p class="description">This app allows to perform basic mathematical operations, convert currencies using current exchange rates, and switch between temperature units using this convenient tool.</p>
-                    <!-- <div class="project-links">
-                        <a class="fa-solid fa-code" href="https://github.com/amrusb/JS-Calculator"></a><a class="fa-regular fa-file-lines" href="#"></a>
-                    </div> -->
-                </div>
+                <i id="right" class="fa-solid fa-angle-right controls"></i>
             </div>
-            <i id="right" class="fa-solid fa-angle-right controls"></i>
         </div>
     </div>
     <div class="container divider text-center">
@@ -246,27 +240,25 @@
         </div>
     </div>
     <!-- CONTACT -->
-    <div id="contact" class="container text-center section">
+    <div id="contact" class="container section">
         <h2>&mdash; contact</h2>
         <h1 data-value="how to reach me" >how to reach me</h1>
-        <div class="row">
-            <div class="col-md-4 content">
-                <a href="mailto:bartosz.surma@outlook.com">
-                    <button class="contact-btn" ><i class="fa-solid fa-envelope"></i>e-mail me</button>
-                </a>
-            </div>
-            <div class="col-md-4 content">
-                <a href="http://m.me/bsurmaa" target="_blank">
-                    <button class="contact-btn"><i class="fa-brands fa-facebook-messenger"></i>write me</button>
-                </a>
-            </div>
-            <div class="col-md-4 content">
-                <a href="http://t.me/amrusb" target="_blank">
-                    <button class="contact-btn"><i class="fa-brands fa-telegram"></i>telegram me</button>
-                </a>
-            </div>
+        <div class="col-md-4 content">
+            <a href="mailto:bartosz.surma@outlook.com">
+                <button class="contact-btn" ><i class="fa-solid fa-envelope"></i>e-mail me</button>
+            </a>
         </div>
-        <div class="row social-media">
+        <div class="col-md-4 content">
+            <a href="http://m.me/bsurmaa" target="_blank">
+                <button class="contact-btn"><i class="fa-brands fa-facebook-messenger"></i>write me</button>
+            </a>
+        </div>
+        <div class="col-md-4 content">
+            <a href="http://t.me/amrusb" target="_blank">
+                <button class="contact-btn"><i class="fa-brands fa-telegram"></i>telegram me</button>
+            </a>
+        </div>
+        <div class=" text-center social-media">
             <h3>you can also find me on:</h3>
             <div class="">
                     <a class="fa-brands fa-github" href="https://github.com/amrusb" target="_blank"></a>

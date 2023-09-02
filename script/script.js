@@ -26,7 +26,11 @@ const poster = document.querySelector(".poster-wrapper")
 
 
 $(document).ready(function () {
-    setAge();
+    const body =  document.querySelector("body");
+    const loadingScreen = document.querySelector(".loading-screen")
+    console.log(loadingScreen.classList);
+    body.classList.toggle("scrollLock");
+    loadingScreen.classList.toggle("hide");
     portfolioTypes.forEach(type =>{
         type.addEventListener("click", (e)=>{
            if(!e.target.classList.contains("active")){
@@ -39,3 +43,12 @@ $(document).ready(function () {
         });
     })
 });
+
+
+window.onload = function(e){ 
+    const body =  document.querySelector("body");
+    const loadingScreen = document.querySelector(".loading-screen")
+    console.log(loadingScreen.classList);
+    body.classList.toggle("scrollLock");
+    loadingScreen.classList.toggle("hide");
+}

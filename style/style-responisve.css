@@ -1,12 +1,29 @@
+
 @media screen and (max-width: 767px) {
-    .welcome{
-        font-size: 11vw !important;
+    #blob{
+        display: none;
     }
-    .small-welcome{
-        font-size: 4vw !important;
+    .main-wrapper{
+        margin-bottom: 150px!important;
     }
+    .main-text{
+        font-size: 12vw !important;
+    }
+    .sub-text{
+        font-size: 7vw !important;
+    }
+
     .fa-angles-right{
+        position: absolute !important;
         font-size: 9vw !important;
+    }
+    .first-angles{
+        bottom: 100%;
+        right: 100%;
+    }
+    .second-angles{
+        top: 150%;
+        left: 50%;
     }
     .profile-pic{
         border: 10px solid var(--TERTIARY_COLOUR);
@@ -18,20 +35,32 @@
         display: none;
     }
     .frame{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        height: 80vw;
+        margin-bottom: 100px!important;
+        margin-top: 0px!important;
     }
-    .frame img:first-child, .frame img:nth-child(2), .frame img:nth-child(3){
-        position: inherit;
-        height: 33vh;
-        display: inline;
-        margin: 5px;
-        border: solid 5px var(--TERTIARY_COLOUR);
+    .frame img{
+        margin: 0px !important; 
+        padding: 0px !important;
+        position: absolute;
+        height: 45vw !important;
+        top: 50%  !important;
+        transform: translateY(-10%);
+        border: solid 4px var(--TERTIARY_COLOUR);
+    }
+    .frame img:first-child{
+        height: 80vw !important;
+        top: 0px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
     }
     .frame img:nth-child(2){
-        height: 40vh;
+        left: 2% !important;
     }
+    .frame img:nth-child(3){
+        right: 2% !important;
+    } 
     #about h2{
         margin-top: 30px!important;
     }
@@ -43,9 +72,17 @@
     .skill-item{
         width: 20vw !important;
     }
+    .portfolio-type-wrapper{
+        display: block;
+    }
     .portfolio-type{
-        display:block;
-        width: 100%!important;
+        display:block!important;
+        width: 90%!important;
+        text-align: center!important;
+    }
+    .portfolio-type{
+        background-color: var(--SHADOW);
+        color: var(--BG_COLOUR) !important;
     }
     .portfolio-type.line::after{
         display: none;
@@ -54,15 +91,125 @@
         width: calc(90%);
         margin-left: 0;
     }
+    /* PROJECT CAROUSEL */
+    .project-wrapper{
+        position: relative;
+        width: 98vw;
+    }
+    .controls{
+        display: none!important;
+    }
+    .project-carousel{
+        width: 99%;
+        height: 100vh;
+        padding: 0px !important;
+        margin: 0px !important;
+        font-size: 2px !important;
+        overflow-y: scroll !important;
+        overflow-x: hidden;
+        border: solid 3px red;
+    }
+    .project-item{
+        width: 90vw !important;
+        display: block !important;
+        padding: 20px !important;
+        line-height: 0.21em;
+        margin: 20px 0px;
+    }
+    .project-item:first-child{
+        top: 0px;
+    }
+    /* POSTER CAROUSEL */
+    .poster-carousel img{
+        width: calc(100% / 1.1) !important;;
+      }
+      .poster-wrapper i{
+        top: 105% !important;
+      }
+      .poster-wrapper i:first-child{
+        left: calc(50% - 54px) !important;
+        display: none;
+      }
+      .poster-wrapper i:last-child{
+        right: calc(50% - 54px) !important;
+        
+      }
 }
 @media screen and (max-width: 1200px) and (min-width: 768px){
-    .welcome{
-        font-size: 5vw !important;
+    .main-text{
+        font-size: 5.5vw !important;
     }
-    .small-welcome{
-        font-size: 2.5vw !important;
+    .sub-text{
+        font-size: 3.3vw !important;
     }
     .fa-angles-right{
-        font-size: 5vw !important;
+        font-size: 5.5vw !important;
     }
+    .project-item{
+        padding: 24px !important;
+    }
+    .welcome-div .circle-lg{
+        transform: translateY(120%)!important;
+    }
+    .frame{
+        display: block;
+        height: 40vw;
+        margin-top: 0px!important;
+    }
+    .frame img{
+        margin: 0px !important; 
+        padding: 0px !important;
+        position: absolute;
+        height: 35vw !important;
+        top: 0px  !important;
+        transform: translateY(-10%);
+        border: solid 4px var(--TERTIARY_COLOUR);
+    }
+    .frame img:first-child{
+        left: 50% !important;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    .frame img:nth-child(2){
+        left: 2% !important;
+        transform: translateX(-2%);
+        z-index: 1;
+    }
+    .frame img:nth-child(3){
+        right: 2% !important;
+        transform: translateX(2%);
+        z-index: 3;
+    } 
+
+    .skills {
+        padding: 5px !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+    .skill-item{
+        width: 20vw !important;
+    }
+
+    .poster-carousel img{
+        width: calc(100% / 2.2) !important;
+        margin-left: 20px !important;
+      }
+      .controls{
+        top: 85% !important;
+        width: 200px !important;
+        border-radius: 20px !important;
+      }
+      .poster-wrapper i{
+        /* font-size: 2rem !important; */
+        top: 107% !important;
+        width: 200px !important;
+        border-radius: 20px !important;
+      }
+      .poster-wrapper i:first-child, .controls:first-child{
+        left: calc(50% - 210px) !important;
+        display: none;
+      }
+      .poster-wrapper i:last-child, .controls:last-child{
+        right: calc(50% - 210px) !important;
+        
+      }
 }

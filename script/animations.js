@@ -191,7 +191,9 @@ homeTimeline.to(".second-angles",
 //     })
 // })
 
-$(document).ready(function () {
+// $(document).ready();
+
+window.onload = function () {
     animateText();
     document.getElementById("hacking-animation").onmouseover = event => hackingAnimation(hacking_container);
     
@@ -199,4 +201,4 @@ $(document).ready(function () {
         hackingAnimation(type);
     } 
     });
-});
+}

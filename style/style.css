@@ -13,7 +13,7 @@
     color: var(--MAIN_COLOUR) !important;
     color: var(--MAIN_COLOUR) !important;
     transition: 0.3s;
-    font-size: 14pt !important;
+
     /* scroll-behavior: smooth; */
 }
 *::-webkit-scrollbar{
@@ -29,13 +29,41 @@
 body{
     background-color: var(--BG_COLOUR) !important;
     background: linear-gradient(346deg, var(--BG_COLOUR) 65%, #94c6f283 100%) !important;
-
 }
 .scrollLock{
     overflow: hidden;
 }
 .hide{
     display: none;
+}
+.loading-screen{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    background-color:#94c6f286;
+    backdrop-filter: blur(20px);
+    z-index: 500;
+}
+@keyframes rotation {
+    from {
+        rotate: 0deg;
+      }
+           
+      to {
+        rotate: 360deg;
+      }
+    
+}
+.loading-screen i{
+    /* transform: translateY(-50%); */
+    font-size: 14vw;
+    color: var(--BG_COLOUR) !important;
+    z-index: 1001;
+    animation: rotation 1.6s infinite;
+    transform: 0s;
 }
 .quote-photo{
     height: 100vh;
@@ -150,8 +178,7 @@ body{
 
 .fa-angles-right, .fa-angles-left{
     display: inline;
-    font-size: 60pt!important;
-    color:var(--SECONDARY_COLOUR)!important;
+    font-size: 60pt;
     color:var(--SECONDARY_COLOUR)!important;
     margin-right: 5px;
 }
@@ -172,13 +199,8 @@ body{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 60pt !important;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 60pt !important;
+    font-size: 60pt ;
     text-align: justify;
-    border-radius: 2rem;
-    padding: 10px;
     border-radius: 2rem;
     padding: 10px;
 }
@@ -193,7 +215,7 @@ body{
 .sub-text{
     font-family: 'Montserrat', sans-serif!important;
     font-weight: 300;
-    font-size: 30pt !important;
+    font-size: 30pt;
     text-transform: uppercase;
     text-align: right;
     color: var(--TERTIARY_COLOUR) !important; 
@@ -205,20 +227,6 @@ body{
     background-color: var(--MAIN_COLOUR);
 }
 
-.sub-text{
-    font-family: 'Montserrat', sans-serif!important;
-    font-weight: 300;
-    font-size: 30pt !important;
-    text-transform: uppercase;
-    text-align: right;
-    color: var(--TERTIARY_COLOUR) !important; 
-    padding: 10px;
-    border-radius: 2rem;
-}
-.sub-text:hover{
-    color: var(--BG_COLOUR) !important;
-    background-color: var(--MAIN_COLOUR);
-}
 #karetka{
     display: inline-block;
     width: 15pt;
@@ -246,8 +254,7 @@ body{
 }
 .fa-angles-right{
     color: var(--SECONDARY_COLOUR) !important;
-    color: var(--SECONDARY_COLOUR) !important;
-    font-size: 60pt !important;
+    font-size: 60pt;
 }
 
 h1, h2{
@@ -284,9 +291,14 @@ h2 i{
     margin-right: 20px;
 }
 h3 {
-    font-weight: 300;
+    font-size: 14pt;
+    margin-top: 10vw!important;
+    font-weight: 200;
+    line-height: 140% !important;
+    letter-spacing: 0.2em;
     padding: 20px !important;
 }
+
 
 .profile-pic{
     width: 100%;
@@ -301,7 +313,7 @@ h3 {
 .welcome-div .circle-lg{
     position: absolute;
     left: 0%;
-    transform: translate(10%, 110%);
+    transform: translate(10%, 100%);
     z-index: -2;
 }
 .welcome-div svg{
@@ -346,11 +358,14 @@ svg {
 }
 
 .contact-btn{
-    width: 100%;
+    width: 100% !important;
+    font-size: 14pt !important;
+    font-weight: 300;
+    letter-spacing: 0.05em;
     padding: 9px;
-    border: 2px solid var(--MAIN_COLOUR);
-    border: 2px solid var(--MAIN_COLOUR);
-    border-radius: 50px;
+    border: 3px solid var(--MAIN_COLOUR);
+    background-color: #f2f2f29d;
+    border-radius: 20px;
 }
 @media screen and (max-width: 991px) {
     .contact-btn{
@@ -362,15 +377,14 @@ svg {
     margin-right: 10px;
 }
 .contact-btn:hover, .contact-btn:hover i{
-    color: white!important;
+    color: var(--BG_COLOUR)!important;
     border-color: white;
-    background-color: var(--SECONDARY_COLOUR);
     background-color: var(--SECONDARY_COLOUR);
 }
 
 .social-media a{
-    font-size: 20pt !important;
-    margin: 0px 10px;
+    font-size: 22pt !important;
+    margin: 10px 35px;
 }
 .social-media a:link, .social-media a:visited{
     text-decoration: none;
@@ -424,10 +438,10 @@ svg {
     margin: 20px;
     border-radius: 2rem;
     padding:  10px 20px 10px 20px;
-    width: 25%!important;
-    font-size: 20pt!important;
-    font-weight: 300 !important;
-    color: var(--TERTIARY_COLOUR)!important;
+    width: 25%;
+    font-size: 20pt;
+    font-weight: 300 ;
+    color: var(--TERTIARY_COLOUR);
     letter-spacing: 0.3em;
     cursor: pointer;
     text-align:left;
@@ -453,7 +467,8 @@ svg {
 }
 
 #about p{
-    line-height: 200%;
+    font-size: 14pt;
+    line-height: 180%;
 }
 .frame img{
     position: absolute;
@@ -505,4 +520,32 @@ svg {
     line-height: 2;
     text-indent: 20pt;
     text-align: justify;
+}
+@keyframes blob-animation {
+    from {
+        rotate: 0deg;
+      }
+      
+      50% {
+        scale: 1 1.4;
+      }
+      
+      to {
+        rotate: 360deg;
+      }
+}
+#blob{
+    
+    height: 24vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background: linear-gradient(to right, var(--TERTIARY_COLOUR), var(--SECONDARY_COLOUR));
+    border-radius: 50%;
+    animation: blob-animation  15s infinite;
+    opacity: 0.5;
+    filter: blur(40px);
+    z-index: -10;
 }
